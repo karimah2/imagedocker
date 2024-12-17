@@ -8,6 +8,7 @@ RUN apt update -y && \
 EXPOSE 9000 
 
 COPY index.html /var/www/html 
+COPY welcome.conf /etc/apache2/site-enabled
 
 VOLUME /var/www/html 
 
