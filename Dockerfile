@@ -5,7 +5,7 @@ RUN apt update -y && \
     apt clean 
 
 
-EXPOSE 9000 
+EXPOSE 80
 
 COPY index.html /var/www/html 
 COPY welcome.conf /etc/apache2/site-enabled
